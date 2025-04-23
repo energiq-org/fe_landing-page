@@ -1,0 +1,27 @@
+#bg-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        to top,
+        rgba(54, 54, 54, 0.2) 0%,
+        rgba(191, 78, 48, 0.1) 77%
+    );
+    z-index: -2;
+}
+
+.background-container {
+    position: relative;
+}
