@@ -46,14 +46,6 @@ function App() {
               <MotionDiv />
             </div>
           </div>
-          {/* <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[75%] md:text-[200px] md:tracking-[10px] text-[100px]  flex flex-col items-start z-0 pointer-events-none md:leading-none leading-tight motion-translate-y-in-50 ">
-            <h1 className="text-[#BF4E30]  font-bebas select-none m-0 p-0 ">
-              Key
-            </h1>
-            <h1 className="text-[#BF4E30]  font-bebas select-none m-0 p-0  mt-[-30px]">
-              Features
-            </h1>
-          </div> */}
     </section>
 
 

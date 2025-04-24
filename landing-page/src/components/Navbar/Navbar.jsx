@@ -1,4 +1,5 @@
 import LOGO from '../../assets/logo.png';
+import { Icon } from "@iconify/react";
 
 const Navbar = ()=>{
     return(
@@ -8,7 +9,8 @@ const Navbar = ()=>{
       <img src={LOGO} className="h-8" alt="Flowbite Logo" />
   </a>
   <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button type="button" className="border-2 rounded-br-xl border-[#BF4E30] text-[#BF4E30] border-br- font-medium  text-sm px-4 py-2 text-center">Download The App</button>
+      <button type="button" className="border-2 rounded-br-xl border-[#BF4E30] text-[#BF4E30] border-br- font-medium  text-sm px-4 py-2 text-center flex items-center gap-x-1">
+        Download The App <Icon icon="tabler:arrow-up-right" width="16" height="16"   /></button>
       
       
   </div>

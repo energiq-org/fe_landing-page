@@ -1,6 +1,7 @@
 import './Motion.scss';
 import { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "motion/react";
+import { Icon } from "@iconify/react";
 
 export default function MotionDiv() {
   const ref = useRef(null);
@@ -22,14 +23,16 @@ export default function MotionDiv() {
   >
   
       <motion.div
-        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_300deg,_rgba(54,_54,_54,_0.86)_360deg)] 
-        hover:bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,1)_113deg,_rgba(29,_29,_29,1)_300deg,_rgba(54,_54,_54,_1)_360deg)]"
+        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_58deg,_rgba(29,_29,_29,_0.86)_166deg,_rgba(54,_54,_54,_0.86)_360deg)] 
+        hover:bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,1)_58deg,_rgba(29,_29,_29,1)_166deg,_rgba(54,_54,_54,_1)_360deg)]"
         initial={{ opacity: 0, y: 50 }}
         animate={animate ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0.1, duration: 0.5 }}
       >
         <div className="card__title text-left flex flex-col space-y-3">
-          <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0">ic</p>
+          <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0">
+          <Icon icon="material-symbols-light:ev-station-outline-rounded" width="44" height="44" />
+          </p>
           <h2 className="w-52 font-semibold text-3xl">
             <span className="block">Live</span>
             <span className="block">Availability</span>
@@ -41,14 +44,14 @@ export default function MotionDiv() {
       </motion.div>
 
       <motion.div
-        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_300deg,_rgba(54,_54,_54,_0.86)_360deg)]
-        hover:bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_300deg,_rgba(54,_54,_54,_0.86)_360deg)]"
+        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_336deg,_rgba(54,_54,_54,_0.86)_360deg)]
+        hover:bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,1)_113deg,_rgba(29,_29,_29,1)_336deg,_rgba(54,_54,_54,1)_360deg)]"
         initial={{ opacity: 0, y: 50 }}
         animate={animate ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0.4, duration: 0.5 }}
       >
         <div className="card__title text-left flex flex-col space-y-3">
-          <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0">ic</p>
+          <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0"><Icon icon="pepicons-pencil:monitor-eye-circle" width="44" height="44" /></p>
           <h2 className="w-52 font-semibold text-3xl">
             <span className="block">Vehicle</span>
             <span className="block">Insights</span>
@@ -60,13 +63,13 @@ export default function MotionDiv() {
       </motion.div>
 
       <motion.div
-        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_300deg,_rgba(54,_54,_54,_0.86)_360deg)]"
+        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(37,_37,_37,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_299deg,_rgba(54,_54,_54,_0.86)_360deg)]"
         initial={{ opacity: 0, y: 50 }}
         animate={animate ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0.7, duration: 0.5 }}
       >
         <div className="card__title text-left flex flex-col space-y-3">
-          <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0">ic</p>
+          <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0"><Icon icon="hugeicons:payment-02" width="44" height="44" /></p>
           <h2 className="w-52 font-semibold text-3xl">
             <span className="block">Instant</span>
             <span className="block">Payments</span>
@@ -78,13 +81,13 @@ export default function MotionDiv() {
       </motion.div>
 
       <motion.div
-        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_300deg,_rgba(54,_54,_54,_0.86)_360deg)]"
+        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_223deg,_rgba(54,_54,_54,_0.86)_360deg)]"
         initial={{ opacity: 0, y: 50 }}
         animate={animate ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 1.0, duration: 0.5 }}
       >
         <div className="card__title text-left flex flex-col space-y-3">
-          <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0">ic</p>
+          <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0"><Icon icon="hugeicons:ai-brain-05" width="44" height="44" /></p>
           <h2 className="w-52 font-semibold text-3xl">
             <span className="block">AI-Optimized</span>
             <span className="block">Charging</span>
@@ -100,7 +103,7 @@ export default function MotionDiv() {
         animate={animate ? { opacity: 1 ,y:0} : {}}
         transition={{ delay: 2, duration: 0.6 }}
       >
-        <h1 className="text-[#BF4E30] font-bebas select-none m-0 p-0">Key</h1>
+        <div className="text-[#BF4E30] flex flex-row items-center font-bebas select-none m-0 p-0"><h1>Key</h1> <Icon icon="hugeicons:power-service" width="140" height="140"  style={{color: '#BF4E30'}} /></div>
         <h1 className="text-[#BF4E30] font-bebas select-none m-0 p-0 mt-[-30px]">Features</h1>
       </motion.div>
     </motion.div>
