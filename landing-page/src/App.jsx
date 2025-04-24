@@ -18,7 +18,7 @@ function App() {
   return (
     <>
     {/* first section  */}
-    <section>      
+    <section className='"relative items-center justify-center h-screen  overflow-hidden"'>      
       <Background/>
     <Navbar/>
       <header className=" w-full lg:pt-5 pt-28 flex flex-col items-center justify-center overflow-hidden">
@@ -39,21 +39,21 @@ function App() {
       </section>
 
     {/* second section */}
-    <section className='bg-black min-h-screen relative  overflow-hidden pb-56'>
-            <div className="flex items-center justify-center relative z-10">
+    <section className='bg-black bg-opacity-85 min-h-screen relative  overflow-hidden pb-56'>
+            <div className="flex items-center justify-center relative">
             <div className="text-white text-xl text-center pt-8">
             <AnimatedHeadline />
               <MotionDiv />
             </div>
           </div>
-          <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[75%] md:text-[200px] md:tracking-[10px] text-[100px]  flex flex-col items-start z-0 pointer-events-none md:leading-none leading-tight motion-translate-y-in-50 ">
+          {/* <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[75%] md:text-[200px] md:tracking-[10px] text-[100px]  flex flex-col items-start z-0 pointer-events-none md:leading-none leading-tight motion-translate-y-in-50 ">
             <h1 className="text-[#BF4E30]  font-bebas select-none m-0 p-0 ">
               Key
             </h1>
             <h1 className="text-[#BF4E30]  font-bebas select-none m-0 p-0  mt-[-30px]">
               Features
             </h1>
-          </div>
+          </div> */}
     </section>
 
 
@@ -61,7 +61,7 @@ function App() {
     <PhonseSec />
 
   {/* fourth section */}
-  <section className='bg-black  inset-0 lg:px-4 pt-32  min-h-screen h-auto overflow-hidden  flex lg:flex-row flex-col items-center justify-between pb-0 mb-0'>
+  <section className='bg-black bg-opacity-85  inset-0 lg:px-4 pt-32  min-h-screen h-auto overflow-hidden  flex lg:flex-row flex-col items-center justify-between pb-0 mb-0'>
   <article className='flex flex-col pl-8   justify-between p-0 m-0 '>
       <div className="text-6xl font-normal font-['Bebas_Neue'] tracking-[5.12px] leading-none md:text-9xl flex flex-col [text-wrap:balance] text-[#BF4E30]">
       <h1 className="m-0 lg:leading-none leading-snug">EV CHARGING</h1>
@@ -106,7 +106,7 @@ function App() {
         />
         <img
           src={IPHONE4}
-          className={`absolute scale-[178%] motion-preset-seesaw motion-duration-[5s] motion-delay-75  -bottom-8 left-[8rem] transition-transform duration-300 `}
+          className={`absolute scale-[178%] motion-preset-seesaw motion-duration-[4s] motion-delay-75  -bottom-8 left-[8rem] transition-transform duration-300 `}
         />
         <img
           src={IPHONE5}
