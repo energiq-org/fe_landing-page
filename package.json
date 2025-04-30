@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r git@github.com:nourhanHesham77/Landing-Page.git"
+    "deploy": "gh-pages -d dist -r git@github.com:energiq-org/fe_landing-page.git"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
