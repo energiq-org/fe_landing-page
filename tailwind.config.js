@@ -13,7 +13,7 @@ export default {
         md: '768px',
         lg: '1024px',
         xl: '1536px',
-        '2xl': '1920px',
+        '2xl': '1848px',
       },
       fontFamily: {
         bebas: ['"Bebas Neue"', 'sans-serif'],
