@@ -13,7 +13,7 @@ const PhonseSec = () => {
   const handleLeave = () => setHovered(null);
 
   return (
-    <section className='bg-black bg-opacity-85 p-8 lg:py-32 pt-20 h-full'>
+    
     <div className='flex lg:flex-row flex-col justify-center items-center w-[85%] mx-auto'>
       {[PHONE1, PHONE2, PHONE3].map((phone, index) => (
         <article
@@ -27,7 +27,7 @@ const PhonseSec = () => {
               src={phone}
               alt={`Phone ${index + 1}`}
               className={`z-10 relative transition-transform duration-300 group-hover:scale-90 ${
-                hovered !== null && hovered !== index ? 'scale-75 opacity-55' : 'scale-100'
+                hovered !== null && hovered !== index ? 'scale-75 opacity-90' : 'scale-100'
               }`}
             />
           </div>
@@ -62,7 +62,7 @@ const PhonseSec = () => {
         </article>
       ))}
     </div>
-  </section>
+  
   
   );
 };

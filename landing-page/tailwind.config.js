@@ -73,7 +73,7 @@ export default {
     plugin(function({ addUtilities }) {
       addUtilities({
         '.text-stroke-orange': {
-          '-webkit-text-stroke': '4px #592416',
+          '-webkit-text-stroke': '4px #BF4E30',
           color: 'transparent',
         },
         '.text-stroke-lightOrg': {
