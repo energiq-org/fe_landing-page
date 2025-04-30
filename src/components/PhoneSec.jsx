@@ -26,8 +26,8 @@ const PhonseSec = () => {
             <img
               src={phone}
               alt={`Phone ${index + 1}`}
-              className={`z-10 relative transition-transform duration-300 group-hover:scale-90 ${
-                hovered !== null && hovered !== index ? 'scale-75 opacity-90' : 'scale-100'
+              className={`z-10 relative transition-transform duration-300 group-hover:scale-90 2xl:group-hover:scale-75 ${
+                hovered !== null && hovered !== index ? 'scale-[65%] opacity-85' : 'scale-100'
               }`}
             />
           </div>

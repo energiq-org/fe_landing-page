@@ -98,7 +98,7 @@ export default function MotionDiv() {
         </div>
       </motion.div>
       <motion.div
-        className={`absolute -bottom-56 left-0 -translate-x-1/2 w-[75%] md:text-[200px] md:tracking-[10px] tex[100px] flex flex-col items-start z-0 pointer-events-none md:leading-none leading-tight`}
+        className={`absolute 2xl:-bottom-[19rem] -bottom-56 left-0 -translate-x-1/2 w-[75%] md:text-[200px] md:tracking-[10px] tex[100px] flex flex-col items-start z-0 pointer-events-none md:leading-none leading-tight`}
         initial={{ opacity: 0  ,y:56}}
         animate={animate ? { opacity: 1 ,y:0} : {}}
         transition={{ delay: 2, duration: 0.6 }}

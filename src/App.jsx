@@ -20,20 +20,20 @@ function App() {
         {/* first section  */}
         <section className='min-h-screen snap-start relative overflow-hidden pb-56'>
           <Navbar />
-          <header className="w-full lg:pt-5 pt-28 flex flex-col items-center justify-center overflow-hidden">
+          <header className="w-full 2xl:pt-32 lg:pt-5 pt-28 flex flex-col items-center justify-center overflow-hidden">
             <SingleSlider direction="left" textStyle="forward" />
             <SingleSlider direction="right" textStyle="backward" />
             <SingleSlider direction="left" textStyle="forward" />
           </header>
-          <div className='absolute bottom-44 right-5'>
+          <div className='absolute  bottom-44 right-5'>
             <img src={AUDI} className='scale-95' />
           </div>
-          <section className='grid grid-cols-4 grid-rows-2 font-montserrat px-10'>
-            <div className='col-start-1 row-start-1 -space-y-0.5 leading-tight font-semibold text-[#f1ae9c] text-lg'>
+          <section className='grid grid-cols-4 grid-rows-2 font-montserrat px-10 2xl:mt-14'>
+            <div className='col-start-1 row-start-1 -space-y-0.5 leading-tight font-semibold text-[#f1ae9c] text-lg 2xl:text-xl'>
               <h2>Powering the Future of</h2>
               <h2>EV Charging</h2>
             </div>
-            <div className='col-start-5 text-sm row-start-4'>
+            <div className='col-start-5 2xl:text-md text-sm row-start-4'>
               <p className='text-white flex flex-row'>
                 <img src={SCROLL} />
                 Scroll
