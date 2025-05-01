@@ -1,8 +1,7 @@
-import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: "/fe_landing-page/",
+export default ({ mode }) => ({
+  base: mode === 'production' ? '/' : '/fe_landing-page/',
   plugins: [react()],
-})
+});

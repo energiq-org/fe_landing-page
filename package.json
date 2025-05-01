@@ -1,6 +1,6 @@
 {
   "name": "landing-page",
-  "homepage": "https://energiq-org.github.io/fe_landing-page/",
+  "homepage": "https://www.energiq.net",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME dist/",
     "deploy": "gh-pages -d dist -r git@github.com:energiq-org/fe_landing-page.git"
   },
   "dependencies": {
