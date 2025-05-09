@@ -4,7 +4,7 @@ const SingleSlider = ({ direction , textStyle}) => {
 
   const content = (
     <>
-     <h1 className="text-[170px] leading-[0.9] p-0 m-0 mr-7 font-['Bebas_Neue'] whitespace-nowrap">
+     <h1 className="2xl:text-[170px] text-[155px] leading-[0.9] p-0 m-0 mr-7 font-['Bebas_Neue'] whitespace-nowrap">
       ENERGIQ • ENERGIQ • ENERGIQ •
     </h1>
     </>

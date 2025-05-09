@@ -13,9 +13,10 @@ export default function MotionDiv() {
   }, [isInView]);
 
   return (
+    <>
     <motion.div
     ref={ref}
-    className={`p-2 flex  md:flex-row flex-col justify-center items-center space-x-4 relative ${animate ? 'animate-cards' : ''}`}
+    className={`w-fit mx-auto grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-8 gap-x-4 p-2 relative ${animate ? 'animate-cards' : ''}`}
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     viewport={{ once: true }}
@@ -23,7 +24,7 @@ export default function MotionDiv() {
   >
   
       <motion.div
-        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_58deg,_rgba(29,_29,_29,_0.86)_166deg,_rgba(54,_54,_54,_0.86)_360deg)] 
+        className="card rounded-2xl p-6 xl:p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_58deg,_rgba(29,_29,_29,_0.86)_166deg,_rgba(54,_54,_54,_0.86)_360deg)] 
         hover:bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,1)_58deg,_rgba(29,_29,_29,1)_166deg,_rgba(54,_54,_54,_1)_360deg)]"
         initial={{ opacity: 0, y: 50 }}
         animate={animate ? { opacity: 1, y: 0 } : {}}
@@ -44,7 +45,7 @@ export default function MotionDiv() {
       </motion.div>
 
       <motion.div
-        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_336deg,_rgba(54,_54,_54,_0.86)_360deg)]
+        className="card rounded-2xl p-6 xl:p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_336deg,_rgba(54,_54,_54,_0.86)_360deg)]
         hover:bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,1)_113deg,_rgba(29,_29,_29,1)_336deg,_rgba(54,_54,_54,1)_360deg)]"
         initial={{ opacity: 0, y: 50 }}
         animate={animate ? { opacity: 1, y: 0 } : {}}
@@ -63,7 +64,7 @@ export default function MotionDiv() {
       </motion.div>
 
       <motion.div
-        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(37,_37,_37,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_299deg,_rgba(54,_54,_54,_0.86)_360deg)]"
+        className="card rounded-2xl p-6 xl:p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(37,_37,_37,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_299deg,_rgba(54,_54,_54,_0.86)_360deg)]"
         initial={{ opacity: 0, y: 50 }}
         animate={animate ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 0.7, duration: 0.5 }}
@@ -81,7 +82,7 @@ export default function MotionDiv() {
       </motion.div>
 
       <motion.div
-        className="card rounded-2xl p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_223deg,_rgba(54,_54,_54,_0.86)_360deg)]"
+        className="card rounded-2xl p-6 xl:p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_223deg,_rgba(54,_54,_54,_0.86)_360deg)]"
         initial={{ opacity: 0, y: 50 }}
         animate={animate ? { opacity: 1, y: 0 } : {}}
         transition={{ delay: 1.0, duration: 0.5 }}
@@ -97,8 +98,10 @@ export default function MotionDiv() {
           </p>
         </div>
       </motion.div>
-      <motion.div
-        className={`absolute 2xl:-bottom-[19rem] -bottom-56 left-0 -translate-x-1/2 w-[75%] md:text-[200px] md:tracking-[10px] tex[100px] flex flex-col items-start z-0 pointer-events-none md:leading-none leading-tight`}
+
+    </motion.div>
+    <motion.div
+        className={`sm:relative md:bottom-[5rem]  sm:-bottom-1/4 left-0 -translate-x-1/2 w-[75%] text-[100px] px-5 sm:text-[200px] md:tracking-[10px] tex[100px] flex flex-col items-start z-0 pointer-events-none md:leading-none leading-tight`}
         initial={{ opacity: 0  ,y:56}}
         animate={animate ? { opacity: 1 ,y:0} : {}}
         transition={{ delay: 2, duration: 0.6 }}
@@ -106,6 +109,6 @@ export default function MotionDiv() {
         <div className="text-[#BF4E30] flex flex-row items-center font-bebas select-none m-0 p-0"><h1>Key</h1> <Icon icon="hugeicons:power-service" width="140" height="140"  style={{color: '#BF4E30'}} /></div>
         <h1 className="text-[#BF4E30] font-bebas select-none m-0 p-0 mt-[-30px]">Features</h1>
       </motion.div>
-    </motion.div>
+    </>
   );
 }

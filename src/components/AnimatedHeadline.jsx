@@ -48,7 +48,7 @@ const lines = [
     return (
       <motion.div
         ref={ref}
-        className="text-center text-white text-sm 2xl:text-2xl md:text-xl font-medium space-y-2  font-montserrat"
+        className="text-start sm:text-center text-white text-sm lg:text-2xl md:text-xl font-medium space-y-2  font-montserrat"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.99 }}
