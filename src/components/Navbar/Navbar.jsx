@@ -35,11 +35,7 @@ const Navbar = () => {
                 </div>
                 <ul className="flex flex-col md:flex-row gap-2 lg:space-x-8 w-full ">
    
-                        <li className="flex-1 my-1 md:my-0">
-                            <button onClick={() => scrollToSection('home')} className="block w-full text-start text-xl py-1 px-5 text-white rounded-3xl  md:border border-solid border-gray-400 md:text-center hover:bg-[#9c3d26] hover:border-[#9c3d26] transition-all duration-500 ease-in-out md:text-base lg:text-md 2xl:text-xl 2xl:py-2">
-                                Home
-                            </button>
-                        </li>
+                       
 
                         <li className="flex-1 my-1 md:my-0">
                             <button  onClick={() => scrollToSection('dashboard')} className="block w-full text-start text-xl py-1 px-5 text-white rounded-2xl  md:border border-solid border-gray-400 md:text-center hover:bg-[#9c3d26] hover:border-[#9c3d26] transition-all duration-500 ease-in-out md:text-base lg:text-md 2xl:text-xl 2xl:py-2">
@@ -48,10 +44,17 @@ const Navbar = () => {
                         </li>
 
                         <li className="flex-1 my-1 md:my-0">
+                            <button onClick={() => scrollToSection('features')} className="block w-full text-start text-xl py-1 px-5 text-white rounded-3xl  md:border border-solid border-gray-400 md:text-center hover:bg-[#9c3d26] hover:border-[#9c3d26] transition-all duration-500 ease-in-out md:text-base lg:text-md 2xl:text-xl 2xl:py-2">
+                                Features
+                            </button>
+                        </li>
+
+                        <li className="flex-1 my-1 md:my-0">
                             <button  onClick={() => scrollToSection('services')} className="block w-full text-start text-xl py-1 px-5 text-white rounded-2xl  md:border border-solid border-gray-400 md:text-center hover:bg-[#9c3d26] hover:border-[#9c3d26] transition-all duration-500 ease-in-out md:text-base lg:text-md 2xl:text-xl 2xl:py-2">
                                 Services
                             </button>
                         </li>
+
 
                         <li className="flex-1 my-1 md:my-0">
                             <button  onClick={() => scrollToSection('contact')} className="block w-full text-start text-xl py-1 px-5 text-white rounded-2xl  md:border border-solid border-gray-400 md:text-center hover:bg-[#9c3d26] hover:border-[#9c3d26] transition-all duration-500 ease-in-out md:text-base lg:text-md 2xl:text-xl 2xl:py-2">

@@ -49,7 +49,7 @@ function App() {
         </section>
 
         {/* second section */}
-        <section id='services' className='snap-start min-h-screen relative overflow-hidden px-5 sm:p-0'>
+        <section id='features' className='snap-start min-h-screen relative overflow-hidden px-5 sm:p-0'>
           <div className="flex items-center justify-center relative">
             <div className="text-white text-xl text-center pt-8 2xl:pt-14">
               <AnimatedHeadline />
@@ -59,7 +59,7 @@ function App() {
         </section>
 
         {/* third section */}
-        <section className='flex juctify-center snap-start min-h-screen relative overflow-hidden lg:py-20'>
+        <section id='services' className='flex juctify-center snap-start min-h-screen relative overflow-hidden lg:py-20'>
           <PhonseSec />
         </section>
 

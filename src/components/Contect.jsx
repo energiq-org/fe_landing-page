@@ -29,13 +29,13 @@ const Contact = () => {
         <div className="flex flex-col-reverse xl:flex-row xl:justify-between justify-around pt-10 xl:pt-0 xl:px-20 mx-auto gap-20 h-full ">
           <div className=" shadow-lg sm:w-4/5 xl:w-3/5 self-center mb-20 xl:m-0">
             <form onSubmit={form.handleSubmit(onSubmit)} className=" space-y-6">
-            <div className='flex justify-between gap-8'>
-              <div className="space-y-2 w-1/2">
+            <div className='flex justify-between gap-8 flex-col lg:flex-row'>
+              <div className="space-y-2 w-full lg:w-1/2">
                 <label className="text-xl mb-1 block text-white">Name</label>
                 <input placeholder="Enter your Name" className="w-full bg-[#121212] text-[#FFFFFF] py-3 px-4  mt-1 border-b-2 focus:outline-none focus:ring-0 transition box-border border-[#3A3A3A] focus:border-[#BF4E30] " {...form.register('name')}/>
                 <p className="text-sm text-[#CE1126]">{form.formState.errors.name?.message}</p>
               </div>
-              <div className="space-y-2 w-1/2">
+              <div className="space-y-2 w-full lg:w-1/2">
                 <label className="text-xl mb-1 block text-white">Email</label>
                 <input type="email" placeholder="Enter Your E-mail" className="w-full bg-[#121212] text-[#FFFFFF] py-3 px-4  mt-1 border-b-2 focus:outline-none focus:ring-0 transition box-border border-[#3A3A3A] focus:border-[#BF4E30] " {...form.register('email')}/>
                 <p className="text-sm text-[#CE1126]">{form.formState.errors.email?.message}</p>
@@ -60,15 +60,15 @@ const Contact = () => {
         <div className="text-sm font-medium grid grid-cols-2 gap-x-24 sm:fipl-16 sm:gap-x-32 gap-8 px-100 pt-20 place-items-start">
         <div className='flex items-center gap-2 justify-center '>
           <Icon icon="garden:email-fill-26" width="26" height="26" />
-          <p className='text-white sm:text-lg font-thin'>anyone@gmail.com</p>
+          <p className='text-white sm:text-lg font-thin'>support@energiq.net</p>
         </div>
         <div className='flex items-center gap-2 justify-center '>
         <Icon icon="mdi:address-marker" width="24" height="24" />
-        <p className='text-white sm:text-lg font-thin'>123 test ST, City</p>
+        <p className='text-white sm:text-lg font-thin'>Elshrouq, Egypt</p>
         </div>
         <div className='flex items-center gap-2 justify-center '>
         <Icon icon="zondicons:network" width="20" height="20" />
-        <p className='text-white sm:text-lg font-thin'>WWW.EV_CHARGING.com</p>
+        <p className='text-white sm:text-lg font-thin' onClick={() => window.open('https://www.energiq.net', '_blank')}>www.energiq.net</p>
         </div>
                 <div className='flex items-center gap-2 justify-center mt-0'>
           <Icon icon="ic:baseline-phone" width="24" height="24" />
