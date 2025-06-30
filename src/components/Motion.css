@@ -1,64 +1,12 @@
 .card {
   width: 290px;
   height: 350px;
-  animation: flatten 3s ease-in-out forwards;
-  position: absolute;
-  top: 3.5rem;
-  transition: transform 1s ease;
-}
-.card:nth-child(1) {
-  transform: translateX(-60px) rotateX(0deg) rotateY(75deg) rotateZ(-15deg);
-  animation-delay: 0s;
-}
-.card:nth-child(2) {
-  transform: translateX(-30px) rotateX(0deg) rotateY(75deg) rotateZ(-15deg);
-  animation-delay: 0.1s;
-}
-.card:nth-child(3) {
-  transform: translateX(0px) rotateX(0deg) rotateY(75deg) rotateZ(-15deg);
-  animation-delay: 0.2s;
-}
-.card:nth-child(4) {
-  transform: translateX(30px) rotateX(0deg) rotateY(75deg) rotateZ(-15deg);
-  animation-delay: 0.3s;
+  position: relative;
+  z-index: 10;
 }
 
-@keyframes flatten {
-  50% {
-    transform: rotate3d(1, 1, 0, -0.5turn);
-    z-index: 10;
-  }
-  75% {
-    position: relative;
-    transform: rotate(calc(var(--r) * 1deg));
-  }
-  85% {
-    transform: rotate(0deg);
-    margin: 0 10px;
-  }
-  100% {
-    transform: none;
-    position: relative;
-  }
-}
 .card:hover {
   /* Charge shadow */
   box-shadow: 0px 0px 12px 4px rgba(255, 255, 255, 0.25);
-  transition: all 0.2 linear;
-}
-
-.card__title {
-  animation: titles 4s ease-in-out;
-  animation-direction: normal;
-}
-
-@keyframes titles {
-  0% {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  80% {
-    opacity: 0;
-    transform: translateX(30px);
-  }
+  transition: all 0.2s linear;
 }/*# sourceMappingURL=Motion.css.map */

@@ -1,34 +1,43 @@
 import './Motion.scss';
-import { useEffect, useState, useRef } from "react";
-import { motion, useInView } from "motion/react";
+import { motion } from "motion/react";
 import { Icon } from "@iconify/react";
 
 export default function MotionDiv() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.7 });
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    if (isInView) setAnimate(true);
-  }, [isInView]);
 
   return (
     <>
     <motion.div
-    ref={ref}
-    className={`w-fit mx-auto grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-8 gap-x-4 p-2 relative ${animate ? 'animate-cards' : ''}`}
+    className="w-fit mx-auto grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-8 gap-x-4 p-2 relative"
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5 }}
   >
+    <motion.div
+        className="relative left-1/2 -translate-x-1/2 w-full flex flex-row items-center justify-center z-0 pointer-events-none md:hidden"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+      >
+        <div className="text-[#BF4E30] flex flex-row items-center font-bebas select-none whitespace-nowrap">
+          <h1 className="text-[clamp(2.5rem,8vw,4rem)] leading-none">Key</h1>
+          <Icon 
+            icon="hugeicons:power-service" 
+            className="w-[clamp(2.5rem,8vw,4rem)] h-[clamp(2.5rem,8vw,4rem)] mx-1" 
+            style={{color: '#BF4E30'}} 
+          />
+          <h1 className="text-[clamp(2.5rem,8vw,4rem)] leading-none">Features</h1>
+        </div>
+      </motion.div>
   
       <motion.div
         className="card rounded-2xl p-6 xl:p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_58deg,_rgba(29,_29,_29,_0.86)_166deg,_rgba(54,_54,_54,_0.86)_360deg)] 
         hover:bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,1)_58deg,_rgba(29,_29,_29,1)_166deg,_rgba(54,_54,_54,_1)_360deg)]"
-        initial={{ opacity: 0, y: 50 }}
-        animate={animate ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0.1, duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.1, duration: 0.6 }}
       >
         <div className="card__title text-left flex flex-col space-y-3">
           <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0">
@@ -47,9 +56,10 @@ export default function MotionDiv() {
       <motion.div
         className="card rounded-2xl p-6 xl:p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_336deg,_rgba(54,_54,_54,_0.86)_360deg)]
         hover:bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,1)_113deg,_rgba(29,_29,_29,1)_336deg,_rgba(54,_54,_54,1)_360deg)]"
-        initial={{ opacity: 0, y: 50 }}
-        animate={animate ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0.4, duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3, duration: 0.6 }}
       >
         <div className="card__title text-left flex flex-col space-y-3">
           <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0"><Icon icon="pepicons-pencil:monitor-eye-circle" width="44" height="44" /></p>
@@ -65,9 +75,10 @@ export default function MotionDiv() {
 
       <motion.div
         className="card rounded-2xl p-6 xl:p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(37,_37,_37,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_299deg,_rgba(54,_54,_54,_0.86)_360deg)]"
-        initial={{ opacity: 0, y: 50 }}
-        animate={animate ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 0.7, duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.5, duration: 0.6 }}
       >
         <div className="card__title text-left flex flex-col space-y-3">
           <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0"><Icon icon="hugeicons:payment-02" width="44" height="44" /></p>
@@ -83,9 +94,10 @@ export default function MotionDiv() {
 
       <motion.div
         className="card rounded-2xl p-6 xl:p-3 bg-[conic-gradient(from_180deg_at_50.00%_50.00%,_rgba(36.87,_36.87,_36.87,_0.86)_113deg,_rgba(29,_29,_29,_0.86)_223deg,_rgba(54,_54,_54,_0.86)_360deg)]"
-        initial={{ opacity: 0, y: 50 }}
-        animate={animate ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 1.0, duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.7, duration: 0.6 }}
       >
         <div className="card__title text-left flex flex-col space-y-3">
           <p className="bg-[#393939] rounded-3xl flex w-[60px] h-[60px] p-2 items-center justify-center gap-[10px] shrink-0"><Icon icon="hugeicons:ai-brain-05" width="44" height="44" /></p>
@@ -101,10 +113,11 @@ export default function MotionDiv() {
 
     </motion.div>
     <motion.div
-        className={`sm:relative md:bottom-[5rem]  sm:-bottom-1/4 left-0 -translate-x-1/2 w-[75%] text-[100px] px-5 sm:text-[200px] md:tracking-[10px] tex[100px] flex flex-col items-start z-0 pointer-events-none md:leading-none leading-tight`}
-        initial={{ opacity: 0  ,y:56}}
-        animate={animate ? { opacity: 1 ,y:0} : {}}
-        transition={{ delay: 2, duration: 0.6 }}
+        className="sm:relative relative left-[50%] items-center md:left-[40%] md:bottom-[5rem] sm:-bottom-1/4 -translate-x-1/2 w-[75%] text-[100px] px-5 sm:text-[200px] md:tracking-[10px] tex[100px] hidden md:flex flex-col md:items-start z-0 pointer-events-none md:leading-none leading-tight"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 1.2, duration: 0.8 }}
       >
         <div className="text-[#BF4E30] flex flex-row items-center font-bebas select-none m-0 p-0"><h1>Key</h1> <Icon icon="hugeicons:power-service" width="140" height="140"  style={{color: '#BF4E30'}} /></div>
         <h1 className="text-[#BF4E30] font-bebas select-none m-0 p-0 mt-[-30px]">Features</h1>
