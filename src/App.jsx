@@ -25,18 +25,18 @@ function App() {
 
       <div className="h-screen overflow-y-scroll snap-y snap-mandatory absolute inset-0 bg-stars"  >
         {/* first section  */}
-        <section id='home' className='min-h-screen snap-start relative overflow-hidden'>
+        <section id='home' className='min-h-screen snap-start relative overflow-x-auto overflow-y-hidden sm:overflow-hidden'>
           <Navbar />
           <header className="w-full md:pt-8 2xl:pt-16 flex flex-col items-center justify-center overflow-hidden">
             <SingleSlider direction="left" textStyle="forward" />
             <SingleSlider direction="right" textStyle="backward" />
             <SingleSlider direction="left" textStyle="forward" />
           </header>
-          <div className='absolute right-0 bottom-8 2xl:bottom-12 xl:bottom-2 2xl:right-28'>
-            <img src={AUDI} className=' sm:block 2xl:scale-110 lg:scale-90 md:scale-75 ' />
+          <div className='absolute right-[-50%] bottom-20 sm:right-0 sm:bottom-8 2xl:bottom-12 xl:bottom-2 2xl:right-28'>
+            <img src={AUDI} className='block scale-75 sm:scale-100 2xl:scale-110 lg:scale-90 md:scale-75' />
           </div>
           {/* <section className='grid grid-cols-4 grid-rows-4 font-montserrat px-10 2xl:mt-14'> */}
-            <div className='px-10 leading-tight lg:mt-8 font-semibold text-[#f1ae9c] text-lg 2xl:text-xl'>
+            <div className='absolute bottom-4 left-0 right-0 px-10 leading-tight font-semibold text-[#f1ae9c] text-lg 2xl:text-xl sm:relative sm:bottom-auto sm:lg:mt-8'>
               <h2>Powering the Future of</h2>
               <h2>EV Charging</h2>
             </div>
